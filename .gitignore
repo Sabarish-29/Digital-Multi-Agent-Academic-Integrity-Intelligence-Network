@@ -1,0 +1,55 @@
+# Terraform state
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+tfplan
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+*.egg
+.pytest_cache/
+
+# Node.js
+node_modules/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+
+# Lambda packages
+lambda/*/package/
+lambda/*/package.zip
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# AWS
+.aws/
+credentials
+*.pem
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log

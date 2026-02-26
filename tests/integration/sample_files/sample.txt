@@ -1,0 +1,8 @@
+This is a sample submission for testing the DMAIIN academic integrity analysis pipeline.
+
+It contains plain text content that should be accepted by the intake-handler Lambda
+function as a valid .txt file upload.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

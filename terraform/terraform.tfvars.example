@@ -1,0 +1,48 @@
+# =============================================================================
+# DMAIIN Phase 1 - Terraform Variables
+# =============================================================================
+#
+# Copy this file to terraform.tfvars and fill in the values:
+#   cp terraform.tfvars.example terraform.tfvars
+#
+# IMPORTANT: Do NOT commit terraform.tfvars to version control. It may contain
+# sensitive values. The .gitignore should already exclude it.
+# =============================================================================
+
+# AWS region for all resources
+aws_region = "us-east-1"
+
+# Deployment environment (dev, staging, prod)
+environment = "dev"
+
+# Project name used in resource naming (lowercase, no spaces)
+project_name = "dmaiin"
+
+# Allowed callback URLs for Cognito User Pool Client
+# Update with your actual frontend URL after deployment
+cognito_callback_urls = [
+  "http://localhost:3000/",
+  # "https://your-cloudfront-distribution.cloudfront.net/"
+]
+
+# Allowed logout URLs for Cognito User Pool Client
+cognito_logout_urls = [
+  "http://localhost:3000/",
+  # "https://your-cloudfront-distribution.cloudfront.net/"
+]
+
+# Frontend origin for CORS configuration
+# Use "*" for development, restrict to actual domain in production
+frontend_origin = "*"
+
+# Default Lambda memory in MB
+lambda_memory_mb = 512
+
+# Default Lambda timeout in seconds
+lambda_timeout_seconds = 30
+
+# Maximum file upload size in bytes (default: 50 MB)
+max_upload_size_bytes = 52428800
+
+# CloudTrail log retention in days (7 years = 2555 days for FERPA compliance)
+cloudtrail_retention_days = 2555
